@@ -324,7 +324,7 @@ void Money_Deposit_withdraw(int n, int option)
 					ac.draw(amt);
 		      }
 			int pos=(-1)*static_cast<int>(sizeof(ac));
-			File.seekp(pos,ios::cur);//fn1353
+			File.seekp(pos,ios::cur);
 			File.write(reinterpret_cast<char *> (&ac), sizeof(Bank_Account));
 			cout<<"\n\n\tRecord Updated";
 			found=true;
